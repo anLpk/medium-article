@@ -1,0 +1,242 @@
+/*Default Settings */
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+html {scroll-behavior: smooth;}
+
+body {
+    font-family: 'Oxygen', 'Ubuntu', Helvetica, sans-serif;
+    text-align: center;
+}
+
+/* Layout */
+.main-pic {
+    display: flex;
+    justify-content: center;
+    background-image: url(https://source.unsplash.com/random);
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover; /* Resize the background image to cover the entire container */
+    height: 300px;
+}
+
+.text-container {
+    text-align: center;
+    margin-top: 100px;
+}
+
+h1, h2 {
+    color: white;
+    font-weight: bolder;
+}
+
+h3, h4 {
+    margin: 30px auto;
+    opacity: .8;
+}
+
+.spn {
+    border-bottom: 4px solid tomato;
+}
+h1 {
+    font-size: 30px;
+}
+h2 {
+    font-size: 30px;
+    font-style: italic;
+}
+
+/* Main Section */
+#paragraphs {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    margin-left: 2em;
+}
+
+.first-parag {
+    background-color: #ec5858;
+    padding: 1.5em;
+    border-radius: 4px;
+    box-shadow: 0px 10px 30px rgba(0,0,0,0.2);
+}
+
+.second-parag {
+    background-color: #fd8c04;
+    padding: 1.5em;
+    border-radius: 4px;
+    box-shadow: 0px 10px 30px rgba(0,0,0,0.2);
+}
+
+.third-parag {
+    background-color: #edf285;
+    padding: 1.5em;
+    border-radius: 4px;
+    box-shadow: 0px 10px 30px rgba(0,0,0,0.2);
+}
+
+footer {
+    background-color: #93abd3;
+    padding: 1.5em;
+    border-radius: 4px;
+    box-shadow: 0px 10px 30px rgba(0,0,0,0.2);
+}
+ul {
+    list-style: none;
+}
+
+li {
+    padding: .5em;
+}
+
+/* Navigation Links Hover Style */
+a.home:hover {
+    border-bottom: black 0.2em solid;
+}
+a.portfolio:hover {
+    border-bottom: #EA215A 0.2em solid;
+}
+a.about:hover {
+    border-bottom: #0077b5 0.2em solid;
+}
+a.contact:hover {
+    border-bottom: tomato 0.2em solid;
+}
+
+/* Default Link Style */
+a {
+    text-decoration: none;
+}
+
+a:visited {
+    color: black;
+}
+
+.designedby {
+    margin: 20px auto;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.first {
+    color: tomato;
+}
+
+.second {
+    color: blueviolet;
+}
+
+.third {
+    color: black;
+}
+
+.fourth {
+    color:goldenrod;
+}
+
+.fifth {
+    color: brown;
+}
+
+/* Media Query */
+@media (min-width: 1000px) {
+    .first-parag {
+      max-width: 900px;
+      margin: 3rem auto 2rem;
+    }
+
+    .second-parag {
+        max-width: 900px;
+        margin: 1rem auto 3rem;
+      }
+
+      .third-parag {
+        max-width: 900px;
+        margin: 1rem auto 2rem;
+      }
+
+      .list-two {
+          display: flex;
+          justify-content: center;
+          padding: 0.3em;
+      }
+  }
+
+  @media (max-width: 600px) {
+    .first-parag {
+        max-width: 400px;
+        background-color: #93abd3;
+        padding: 1.5em;
+        border-radius: 4px;
+        box-shadow: 0px 10px 30px rgba(0,0,0,0.2);
+        margin: 20px auto;
+    }
+
+    .second-parag {
+        max-width: 400px;
+        background-color: #edf285;
+        padding: 1.5em;
+        border-radius: 4px;
+        box-shadow: 0px 10px 30px rgba(0,0,0,0.2);
+        margin: 20px auto;
+      }
+
+      .third-parag {
+        max-width: 400px;
+        background-color: #ec5858;
+        padding: 1.5em;
+        border-radius: 4px;
+        box-shadow: 0px 10px 30px rgba(0,0,0,0.2);
+        margin: 20px auto;
+      }
+
+      footer {
+        max-width: 400px;
+        background-color: #fd8c04;
+        padding: 1.5em;
+        border-radius: 4px;
+        box-shadow: 0px 10px 30px rgba(0,0,0,0.2);
+        margin: 20px auto;
+      }
+
+  }
+
+  @media (min-width: 601px) and (max-width: 999px) {
+    .first-parag {
+        max-width: 600px;
+        background-color: #edf285;
+        padding: 1.5em;
+        border-radius: 4px;
+        box-shadow: 0px 10px 30px rgba(0,0,0,0.2);
+        margin: 20px auto;
+    }
+
+    .second-parag {
+        max-width: 600px;
+        background-color: #93abd3;
+        padding: 1.5em;
+        border-radius: 4px;
+        box-shadow: 0px 10px 30px rgba(0,0,0,0.2);
+        margin: 20px auto;
+      }
+
+      .third-parag {
+        max-width: 600px;
+        background-color: orange;
+        padding: 1.5em;
+        border-radius: 4px;
+        box-shadow: 0px 10px 30px rgba(0,0,0,0.2);
+        margin: 20px auto;
+      }
+
+      footer {
+        max-width: 600px;
+        background-color: pink;
+        padding: 1.5em;
+        border-radius: 4px;
+        box-shadow: 0px 10px 30px rgba(0,0,0,0.2);
+        margin: 20px auto;
+      }
+  }
